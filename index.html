@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> DUBIOZA KOLEKTIV </title>
+        <title>Dubioza Kolektiv</title>
         <meta charset="UTF-8">
-        <meta name="viewport" 
-          content="width=device-width, 
-                   initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./ko ide.css">
     </head>
 
     <body>
         <div class="container">
-        <h1>odlucite se sad!!</h1>
-        <form id="poll-form" class="poll-form">
-        <label>
-            <input type="radio"
-                   name="biraj"
-                   value="da" > da
-        </label>
-        <label>
-            <input type="radio"
-                   name="biraj"
-                   value="ne" > ne
-        </label>
-        <button type="submit"
-                 class="vote-button"> biraj
-        </button>
-        </form>
-        <div id="results" class="results">
-            <h2 class="results-title">rezultati
-            </h2> 
-            <div class="results-count">
-                <p> Da: 
-                    <span id="da-count"
-                          class="count">0</span>
-                </p>
-                <p> Ne:
-                    <span id="ne-count"
-                        class="count"> 0
-                    </span>
-                </p>
+            <h1>Odlučite se sad!</h1>
+
+            <form id="poll-form" class="poll-form">
+                <label>
+                    <input type="radio" name="biraj" value="da" required>
+                    Da
+                </label>
+                <label>
+                    <input type="radio" name="biraj" value="ne">
+                    Ne
+                </label>
+                <button type="submit" class="vote-button">Biraj</button>
+            </form>
+
+            <div id="results" class="results">
+                <h2 class="results-title">Rezultati</h2>
+                <div class="results-count">
+                    <p>Da: <span id="da-count" class="count">0</span></p>
+                    <p>Ne: <span id="ne-count" class="count">0</span></p>
+                </div>
             </div>
-        </div>
         </div>
 
         <script src="./ko ide.js"></script>
